@@ -1,3 +1,32 @@
+let player= "X" 
+let turn = 0
+let gameEnded = false
+function performLogic(buttonId, titleId){
+    $(buttonId).remove();
+    $(titleId).text(player);
+    changePlayer();
+    eachTurn();
+
+    
+
+}
+function changePlayer(){
+if (player == "X") {
+    player ="O"
+}else {
+    player ="X"
+}
+
+}
+function eachTurn (){
+turn = turn + 1 ;
+if (turn == 9 ){
+    $("#result").text ("its a draw!");
+}
+}
+
+
+
 
 
 
