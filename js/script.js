@@ -21,9 +21,11 @@ if (player == "X") {
 function eachTurn (){
 turn = turn + 1 ;
 if (turn == 9 ){
-    $("#result").text ("its a draw!");
+    $("#result").text ("its a draw!");/;
 }
 }
+
+
 
 
 
@@ -36,6 +38,7 @@ if (turn == 9 ){
 
 $("#button1").click(function() {
     performLogic("#button1","#tile1");
+    let a= $("#tile1").val();
 });
 
 $("#button2").click(function() {
